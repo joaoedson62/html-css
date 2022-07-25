@@ -20,6 +20,13 @@
             padding: 10px;
         }
 
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead{
             background-color: gray;
             color: white;
@@ -27,6 +34,14 @@
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+
+        tbody > tr:nth-child(odd){  /*Ou você pode usar 2n-1 */
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even){  /*Ou você pode usar 2n */
+            background-color: lightgray;
         }
 
         td.num{
@@ -37,15 +52,16 @@
 <body>
     <h1>Uso de Tbelas Grandes</h1>
     <table>
+        <caption>População das Unidadess Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col"style="width: 50px;">População</th>
             </tr>
         </thead>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>230 024 975</strong></td>
             
         </tfoot>
