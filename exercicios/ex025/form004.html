@@ -16,12 +16,16 @@
                 <input type="text" name="nome" id="inome" minlength="5" maxlength="30" required>
             </p>
             <p>
+                <label for="icpf">CPF</label>
+                <input type="cpf" maxlength="14" pattern="^\d{3}.\d{3}.\d{3}.\d{2}$" required placeholder="xxx.xxx.xxx.xx">
+            </p>
+            <p>
                 <label for="iemail">E-mail</label>
-                <input type="email" name="email" id="iemail" autocomplete="email" required >
+                <input type="email" name="email" id="iemail" autocomplete="email" >
             </p>
             <p>
                 <label for="itel">Telefone</label>
-                <input type="tel" name="tel" id="itel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" requiredplaceholder="(xx)xxxxx-xxxx">
+                <input type="tel" name="tel" id="itel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx)xxxxx-xxxx">
             </p>
         </fieldset>
        <!--Estudar mais sobre regEx-->
